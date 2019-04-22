@@ -14,9 +14,14 @@ function fail(item) {
   return { ...item };
 }
 
-function repair(item) {
+
+
+describe('repair test', () => {
   return { ...item };
 }
+expect((repair(item)).durability).toBe(100);
+
+
 
 function get(item) {
   return { ...item };
