@@ -18,10 +18,19 @@ module.exports = {
 // if items durability is 100 return the item 
 // else set durability to 100
 // and then return the item
-function repair(item) {
-    if (item.durability !== 100) {
-      return { ...item, durability: 100 };
-    } else {
-      null;
+  describe('repair test', () => {
+    // This is a describe block. You can nest them to group your tests 
+    it('returns durabilty to 100', () => {
+    // Arrange
+   const item = {
+     name: 'repair',
+     durability: 99,
+ 
     }
-  }
+   // Act, Assert
+   expect((enhancer.repair(item)).durability).toBe(100); // .toBe() looks for strict equality!
+   });
+ });
+
+
+ 
